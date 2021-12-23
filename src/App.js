@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react';
 import VideoList from './components/VideoList';
 
 export default function App() {
@@ -24,11 +25,6 @@ export default function App() {
       date: '2021-12-11 19:48:00',
     },
   ]);
-
-  useEffect(() => {
-    setList((prev) => [...prev]);
-    return () => {};
-  }, [list]);
 
   return <VideoList list={list} />;
 }

@@ -2,8 +2,9 @@ import React from 'react';
 import DateTime from './DateTime';
 import withFormattedDate from '../hocs/withFormattedDate';
 
+const DateTimePretty = withFormattedDate(DateTime);
+
 export default function Video(props) {
-  const DateTimePretty = withFormattedDate(DateTime);
   return (
     <div className="video">
       <iframe
